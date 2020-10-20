@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ object.shortcode }} | {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+<div class="well text-center" style="margin-top: 30%">
+    <h1>Success!</h1>
+    <p>{{ object.url }}</p>
+
+    <a href="{{ object.get_short_url }}"><p>{{ object.get_short_url }}</p></a>
+    <a class="btn btn-default btn-primary" href="/">&laquo; New</a>
+</div>
+{% endblock content %}

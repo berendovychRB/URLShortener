@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.5/examples/cover/cover.css" rel="stylesheet">
+    <title>Kirr.co | {% block title %}Shorten that url{% endblock title %}</title>
+    <style>
+        body {
+            background-image: url("http://sf.co.ua/13/07/wallpaper-2935650.jpg");
+            {#background-size: cover;#}
+        }
+    </style>
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <main role="main" class="inner cover">
+        {% block content %}
+        {% endblock content %}
+
+    </main>
+
+</div>
+
+
+</body>
+</html>
+
+
+
